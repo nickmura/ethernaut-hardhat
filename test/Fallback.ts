@@ -2,13 +2,13 @@ import { time, loadFixture } from "@nomicfoundation/hardhat-network-helpers";
 import { anyValue } from "@nomicfoundation/hardhat-chai-matchers/withArgs";
 import { InfuraProvider } from "@ethersproject/providers";
 
-import { expect } from "chai";
+import { expect } from "chai"; // testing framework thing
 import { ethers } from "hardhat"
 
-require('dotenv').config()
+
 
 import FallbackABI  from '../bin/contracts/Fallback.json'  
-import { player } from '../state/state'
+import { player, API, API_LK } from '../state/state'
 
 const contract = '0x880d3f2a44ff7701331C223A01de19a96C11A402' // contract instance of Fallback.sol on Sepolia
 
@@ -29,7 +29,7 @@ describe("Fallback", function () {
 
 
     // it('Get contract instance of Fallback.sol', async function () {
-    //     const provider = new ethers.providers.JsonRpcProvider(process.env.API_LK)
+    //     const provider = new ethers.providers.JsonRpcProvider(API_LK)
     //     const signer = provider.getSigner()
 
     // })

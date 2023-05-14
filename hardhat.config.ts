@@ -1,12 +1,10 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
+import { API, PK } from './state/state'
 
-//dotenv
-require('dotenv').config()
 
-const PK = process.env.S_PK
-const API = process.env.API_K
+
 
 const config: HardhatUserConfig = {
   solidity: "0.8.18",
