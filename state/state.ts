@@ -1,0 +1,1 @@
+export const player = '0x2810FFaE7480a3D4Fea16380Aa2473340C25bF31' // current sepolia address player 
