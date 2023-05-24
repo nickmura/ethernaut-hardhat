@@ -8,3 +8,5 @@ export const PK = process.env.S_PK
 export const API_KA= process.env.API_KA
 export const API = process.env.API_K
 export const API_LK = process.env.API_LK
+
+
